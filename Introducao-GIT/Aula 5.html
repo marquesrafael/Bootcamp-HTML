@@ -1,0 +1,15 @@
+Tema: Objetos internos do Git
+
+Tipos de objetos: BLOBS, TREES E COMMITS
+
+--stdin: para informar que não é arquivo e sim texto
+
+BLOBS: contem metadados do git, tipo tamanho \0 e o conteudo (blob 9\0);
+
+TREE: contem blob, e o nome do arquivo. Onde estao localizados os arquivos.
+
+BLOB sha1 do arquivo, as TREE apontam para os BLOB e o sha1 do BLOB
+
+COMMIT: junta tudo.  Arvore, parente (commit antes), autor, mensagem e timestamp(carimbo de tempo)
+
+Sistema distribuido seguro: 
